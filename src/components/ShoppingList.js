@@ -18,12 +18,10 @@ function ShoppingList({ items, setItems }) {
   }
 
   const onItemFormSubmit = (newObj) => {
-    console.log(newObj);
     setItems([...items, newObj])
     setName("")
     setFormCategory("Produce")
   }
-  console.log(name,category)
 
   const itemsToDisplay = items.filter((item) => {
     if (selectedCategory === "All" && selectedSearch === "") {
